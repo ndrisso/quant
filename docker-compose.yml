@@ -1,0 +1,10 @@
+version: '3'
+services:
+  quant:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/quant
+    environment: 
+      ZIPLINE_ROOT: /quant
